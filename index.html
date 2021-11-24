@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Loopstudios landing page</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Hamburger CSS -->
+    <link rel="stylesheet" href="hamburger.css">
     <!-- Tailwind CSS CDN -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
@@ -18,16 +20,21 @@
             <figure class="lg:w-1/2 w-full md:py-0 py-8">
                 <img src="images/logo.svg" alt="Loopstudios Logo">
             </figure>
-            <figure class="lg:hidden block" id="menu-btn">
+            <!-- <figure class="lg:hidden block cursor-pointer menu-btn" id="menu-btn">
                 <img src="images/icon-hamburger.svg" alt="icon-hamburger">
-            </figure>
+            </figure> -->
+            <button class="hamburger hamburger--emphatic menu-btn lg:hidden block" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <nav class="menu">
                 <ul class="flex lg:flex-row flex-col lg:justify-center lg:items-center items-start">
-                    <li class="md:mx-3 mx-0"><a href="#">About</a></li>
-                    <li class="md:mx-3 mx-0"><a href="#">Careers</a></li>
-                    <li class="md:mx-3 mx-0"><a href="#">Events</a></li>
-                    <li class="md:mx-3 mx-0"><a href="#">Products</a></li>
-                    <li class="md:mx-3 mx-0"><a href="#">Support</a></li>
+                    <li class="md:mx-3 mx-0"><a class="menu-link" href="#">About</a></li>
+                    <li class="md:mx-3 mx-0"><a class="menu-link" href="#">Careers</a></li>
+                    <li class="md:mx-3 mx-0"><a class="menu-link" href="#">Events</a></li>
+                    <li class="md:mx-3 mx-0"><a class="menu-link" href="#">Products</a></li>
+                    <li class="md:mx-3 mx-0"><a class="menu-link" href="#">Support</a></li>
                 </ul>
             </nav>
         </section>
@@ -56,7 +63,7 @@
         <section class="xl:px-32 md:px-16 md:pt-16 pt-0 pb-32 px-4">
             <article class="flex md:justify-between justify-center items-center">
                 <h2 class="text-4xl uppercase tracking-wider font-thin">Our creations</h2>
-                <button class="border border-black py-1 px-6 tracking-widest uppercase md:block hidden">See all</button>
+                <button class="border border-black py-1 px-6 tracking-widest uppercase md:block hidden hover:bg-black hover:text-white">See all</button>
             </article>
             <article class="py-16 lg:grid lg:grid-rows-2 lg:grid-cols-4 lg:place-content-stretch lg:gap-6 flex flex-wrap justify-center items-center">
                 <figure class="relative lg:my-0 lg:mx-0 m-3.5">
@@ -133,7 +140,7 @@
                 </figure>
             </article>
             <article class="flex justify-center items-center md:hidden block">
-                <button class="border border-black py-1 px-6 tracking-widest uppercase md:hidden block">See all</button>
+                <button class="border border-black py-1 px-6 tracking-widest uppercase md:hidden block hover:bg-black hover:text-white">See all</button>
             </article>
         </section>
     </main>
